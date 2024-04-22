@@ -1,0 +1,739 @@
+
+*{
+    margin: 5;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+/*mini framework*/
+
+html,body{
+    height: 100%;
+}
+.max-widht{
+    width: 100%;
+    min-height: 100vh;
+}
+.bg{
+    background: url('fundo-app.avif') no-repeat;
+    background-size: cover;
+    height: auto;
+
+}
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/*Menu*/
+
+.menu{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.logo{
+    background: url('logo.restaurante.jpeg')no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 80px;
+    position: relative;
+    z-index: 9;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/*tamanho das fontes*/
+
+.text.gb{ 
+    font-size: 64px;
+}
+.text-md{
+    font-size: 36px;
+}
+.text-pq{
+    font-size: 14px;
+}
+.text-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*cor do texto*/
+
+.color-laranja{
+    color: chocolate;
+}
+.color-cinza{
+    color: darkgray;
+}
+.color-cinza-2{
+    color: rgb(120, 120, 120);
+}
+
+/*Chamada*/
+
+.call{
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+.left{
+    width: 50%;
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+}
+.right{
+    width: 50%;
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+/*imagem*/
+
+img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 20px;
+}
+
+/*Botão*/
+
+button{
+    padding: 10px 20px;
+    background: chocolate;
+    color: aliceblue;
+    font-size: 14px;
+    border: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+button:hover{
+    border: 1px solid chocolate;
+    background:aliceblue ;
+    color: chocolate;
+}
+
+/*content*/
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 2%;
+    width: 100%;
+    min-height: 800px;
+}
+.down{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*titulo*/
+
+.titulo{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/*box*/
+
+.box{
+    width: 25%;
+    min-height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2%;
+}
+
+/*info*/
+
+.info{
+    display: flex;
+}
+
+/* Desktop-menu*/
+
+.desktop-menu ul{
+    display: flex;
+}
+
+.mobile-menu{
+    display: block;
+}
+
+.desktop-menu ul li{
+    padding: 0 25px;
+    list-style-type: none;
+}
+
+.desktop-menu ul li a{
+    text-decoration: none;
+    color: rgb(68, 76, 76);
+    font-size: 18px;
+}
+
+.desktop-menu ul li a:hover{
+    color: chocolate;
+    font-weight: 500;
+}
+
+/*mobile-menu*/
+
+.mobile-menu{
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    background: white;
+    display: none;
+}
+
+.mobile-menu i{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.mobile-menu ul{
+    display: block;
+    text-align: center;
+}
+
+.mobile-menu ul li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.mobile-menu ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: darkgrey;
+
+}
+
+.mobile-menu ul li a:hover{
+    color: chocolate;
+}
+
+/*botao to-top*/
+
+#back-to-top{
+    position: fixed;
+    bottom: 2px;
+    right: 10px;
+    padding: 5px 10px;
+    background: rgb(162, 162, 162);
+}
+
+/* Scrollbar Persolaizada*/ 
+
+body::-webkit-scrollbar{
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track{
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(137, 136, 136);
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+/*Início*/
+
+#home .container{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#home .right{
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#home .right h1{
+    text-align: end;
+}
+
+#home .right h2{
+    text-align: end;
+    margin-top: 20px;
+}
+
+#home .right p{
+    text-align: end;
+    margin-top: 20px;
+}
+
+#home .right button{
+    margin-top: 30px;
+}
+
+/*Sobre*/
+
+#sobre .left{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#sobre .left span{
+    margin-top: 20px;
+}
+
+#sobre .left h2{
+    margin-top: 20px;
+}
+
+#sobre .left p{
+    margin-top: 20px;
+}
+
+#sobre .left button{
+    margin-top: 20px;
+}
+
+#sobre .right img{
+    border-radius: 30px;
+}
+
+/*Serviços*/
+
+#servicos .box i{
+    border: 4px solid gray;
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+#servicos .box h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#servicos .box p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*menu*/
+
+#menu .box{
+    background: rgb(216, 213, 213);
+    border-radius: 20px;
+    border: 5px solid rgb(247, 118, 25);
+    margin: 10px;
+}
+
+#menu .box img{
+    width: 80%;
+    height: auto;
+    margin: 5px;
+}
+
+#menu .box h2{
+    margin-top: 20px;
+
+}
+
+#menu .box p{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: rgb(66, 66, 66);
+}
+
+#menu .box .text-md{
+    font-size: 22px;
+
+}
+
+/*Contato*/
+
+#contato .left{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contato .left h2{
+    margin-top: 20px;
+}
+
+#contato .left p{
+    margin-top: 20px;
+}
+
+#contato .left .info img{
+    width: 140px;
+    margin-top: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contato .right img{
+    width: 63%;
+    height: auto;
+    margin-top: 120px;
+}
+
+/*Pedidos*/
+
+.carrinho{
+    width: 350px;
+    height: 60%;
+    position: fixed;
+    top: 0;
+    /*right: 0;*/
+    right: -500px;
+    background-color: rgb(214, 213, 213);
+    box-shadow: -4px 0 6px rgb(0, 0, 0, 0.1);
+    transition: right o.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.carrinho.open{
+  right: 0;
+}
+.carrinho-fechado{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.teste{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color:rgb(124, 124, 124);
+    border: 1px solid var(gray);
+}
+
+.footer-carrinho {
+    position: absolute;
+    bottom: 20px;
+    width: 88%;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(gray);
+    border-radius: 5px;
+    padding: 15px 10px;
+
+}
+
+.cart-total {
+    font-size: 15px;
+    color: var(rgb(145, 144, 144));
+    font-weight: 500;
+}
+
+.checkout-bnt{
+    width: 100%;
+    margin-top: 2rem;
+    background: var(rgb(66, 66, 66));
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/*Reserva de mesa*/
+
+.container1{
+    background-color: rgb(160, 110, 110);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px;
+    width: 400px;
+    max-width: 100%;
+    
+}
+
+.form{
+    padding: 20px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    display: block;
+   border: 2px solid rgb(172, 171, 171);
+   border-radius: 10px;
+   font-size: 14px;
+   width: 100%;
+   padding: 10px;
+}
+
+/*footer*/
+
+footer .container{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .container p{
+    font-weight: 600;
+
+}
+
+/*Responsivo*/
+
+@media screen and (max-widht: 922px){
+
+/*tamanho das fontes*/
+
+.text-gb{ 
+    font-size: 54px;
+}
+.text-md{
+    font-size: 28px;
+}
+.text-pq{
+    font-size: 13px;
+}
+.text-title{
+    font-size: 18px;
+   
+}
+}
+@media screen and (max-widht:740px){
+
+/* Desktop-menu*/
+
+.desktop-menu ul{
+    display: none;
+}
+
+/* mobile-menu*/
+
+.mobile-menu{
+    display: block;
+}
+
+/*Fontes texto*/
+
+.text-gb{
+    font-size: 42px;
+}
+.text-title{
+    font-size: 16px;  
+}
+
+.titulo{
+    min-height: 150px;
+}
+
+.down{
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 600px;
+}
+
+.left{
+    width: 100%;
+    min-height: 300px;
+}
+
+.right{
+    width: 100%;
+    min-height: 300px;
+}
+
+.box{
+    width: 95%;
+}
+
+.call{
+    flex-direction: column;
+}
+
+img{
+    width: 60%;
+}
+
+/*Home*/
+
+#home .right{
+    align-items: center;
+}
+
+#home .right h1{
+    text-align: center;
+}
+
+#home .right h2{
+    text-align: center;
+}
+
+#home .right p{
+    text-align: center;
+}
+
+/*Sobre*/
+
+#sobre .left{
+    align-items: center;
+}
+
+#about .leftt h2{
+    text-align: center;
+}
+
+#about .leftt p{
+    text-align: center;
+}
+
+#about .right {
+    align-items: center;
+}
+
+/*Sobre*/
+
+#menu .box img{
+ width: 25%;
+ margin-top: 20px;
+
+}
+
+#menu .box h2{
+    margin-top: 10px;
+}
+
+#menu .box p{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: white;
+}
+
+#menu .box i{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menu .box i:hover{
+    color:black;
+    box-shadow: rgb(75, 75, 75)/30%;
+
+}
+
+/*Contato*/
+
+#contato .right img{
+    margin-top: 60px;
+}
+
+/*footer*/
+
+footer .container{
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 150px;
+}
+
+footer .container p{
+    margin-top: 20px;
+}
+
+}
+
+@media screen and (max-width: 648px){
+    .logo{
+        width: 110px;
+        top: 5px;
+    }
+
+    #sobre .right{
+        margin-top: 80px;
+    }
+
+    #about .right img{
+        width: 60%;
+    }
+    
+    #menu .box h2{
+        font-size: 18px;
+    }
+
+    #menu .box p{
+        font-size: 14px;
+    }
+
+    #menu .box .text-md{
+        font-size: 14px;
+    }
+
+    #servicos .box i{
+        border: 4px solid rgb(79, 79, 79);
+        border-radius: 25px;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    #servicos .box h2{
+        font-size: 18px;
+    }
+
+    #servicos .box p{
+        font-size: 14px;
+    }
+}
